@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Start Screen -->
+  <div id="start-screen" class="container">
+    <h2>Enter your name to start quiz</h2>
+    <input type="text" id="username" placeholder="Your Name" />
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Container (hidden initially) -->
+  <div id="quiz-container" class="container" style="display:none;">
+    <h3 id="question-text"></h3>
+    <div id="options-container"></div>
+    <button id="submit-btn">Submit Answer</button>
+  </div>
+
+  <!-- Score Container (hidden initially) -->
+  <div id="score-container" class="container" style="display:none;">
+    <h2 id="score-text"></h2>
+    <button id="restart-btn">Restart Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
